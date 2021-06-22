@@ -1,0 +1,104 @@
+{
+  "$type": "Saves, Assembly-CSharp",
+  "saves": {
+    "$type": "System.Collections.Generic.List`1[[Save, Assembly-CSharp]], mscorlib",
+    "$values": [
+      {
+        "$type": "Save, Assembly-CSharp",
+        "name": "first",
+        "beats": {
+          "$type": "System.Collections.Generic.List`1[[Beat, Assembly-CSharp]], mscorlib",
+          "$values": [
+            {
+              "$type": "SinglePressBeat, Assembly-CSharp",
+              "note": 5,
+              "beatAt": 7,
+              "beatType": 0,
+              "speed": 1.0,
+              "mover": null
+            },
+            {
+              "$type": "ScratchBeat, Assembly-CSharp",
+              "beatAt": 35,
+              "beatType": 2,
+              "speed": 1.0,
+              "mover": null
+            },
+            {
+              "$type": "HoldBeat, Assembly-CSharp",
+              "note": 4,
+              "duration": 2.0,
+              "beatAt": 71,
+              "beatType": 1,
+              "speed": 1.0,
+              "mover": null
+            },
+            {
+              "$type": "DoublePressBeat, Assembly-CSharp",
+              "notes": {
+                "$type": "System.Int32[], mscorlib",
+                "$values": [
+                  4,
+                  3
+                ]
+              },
+              "beatAt": 103,
+              "beatType": 3,
+              "speed": 1.0,
+              "mover": null
+            },
+            {
+              "$type": "ScratchBeat, Assembly-CSharp",
+              "beatAt": 108,
+              "beatType": 2,
+              "speed": 1.0,
+              "mover": null
+            },
+            {
+              "$type": "ScratchBeat, Assembly-CSharp",
+              "beatAt": 144,
+              "beatType": 2,
+              "speed": 1.0,
+              "mover": null
+            },
+            {
+              "$type": "ScratchBeat, Assembly-CSharp",
+              "beatAt": 180,
+              "beatType": 2,
+              "speed": 1.0,
+              "mover": null
+            }
+          ]
+        },
+        "audioClipIndex": 0
+      },
+      {
+        "$type": "Save, Assembly-CSharp",
+        "name": "second",
+        "beats": {
+          "$type": "System.Collections.Generic.List`1[[Beat, Assembly-CSharp]], mscorlib",
+          "$values": [
+            {
+              "$type": "SinglePressBeat, Assembly-CSharp",
+              "note": 4,
+              "beatAt": 2,
+              "beatType": 0,
+              "speed": 1.0,
+              "mover": null
+            },
+            {
+              "$type": "HoldBeat, Assembly-CSharp",
+              "note": 5,
+              "duration": 1.0,
+              "beatAt": 2,
+              "beatType": 1,
+              "speed": 1.0,
+              "mover": null
+            }
+          ]
+        },
+        "audioClipIndex": 0
+      }
+    ]
+  }
+}

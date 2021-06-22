@@ -21,10 +21,10 @@ MonoBehaviour:
     y: 30
     width: 1440
     height: 805
-  m_MinSize: {x: 577, y: 421}
-  m_MaxSize: {x: 12002, y: 8042}
+  m_MinSize: {x: 707, y: 492}
+  m_MaxSize: {x: 18002, y: 14042}
   vertical: 0
-  controlID: 76
+  controlID: 45535
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -138,10 +138,10 @@ MonoBehaviour:
     y: 0
     width: 1015
     height: 805
-  m_MinSize: {x: 302, y: 421}
-  m_MaxSize: {x: 8002, y: 8042}
+  m_MinSize: {x: 432, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 1
-  controlID: 77
+  controlID: 45536
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -207,9 +207,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1277.5105, y: 714, z: 0}
+    m_Target: {x: 2087, y: 1429, z: 0}
     speed: 2
-    m_Value: {x: 1277.5105, y: 714, z: 0}
+    m_Value: {x: 2087, y: 1429, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -259,9 +259,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.057267934, y: -0.018870385, z: 0.0010837335, w: -0.99818}
   m_Size:
-    m_Target: 1115.6631
+    m_Target: 1185.7566
     speed: 2
-    m_Value: 1115.6631
+    m_Value: 1185.7566
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -397,10 +397,10 @@ MonoBehaviour:
     y: 534
     width: 1015
     height: 271
-  m_MinSize: {x: 302, y: 200}
-  m_MaxSize: {x: 8002, y: 4021}
+  m_MinSize: {x: 432, y: 271}
+  m_MaxSize: {x: 14002, y: 10021}
   vertical: 0
-  controlID: 104
+  controlID: 45511
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -455,10 +455,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 9068ffff
-      m_LastClickedID: -38768
-      m_ExpandedIDs: 6643ffffc845ffffa646fffff648ffff9c49ffff128cffff188cffff288cffff348cffff548cffffcc90ffffd892ffff40b6ffff26dcffffb6e7ffff08f5ffffd2f6ffff14faffff4efaffff30fbffff
+      scrollPos: {x: 0, y: 59}
+      m_SelectedIDs: 5a2dfeff
+      m_LastClickedID: -119462
+      m_ExpandedIDs: de2cfefff02cfeff782dfeff7e2dfeff8e2dfeff9a2dfeffba2dfeff8032feffa232fefffa32feff7253feff6e5bfeff7e5bfeffa601ffffb601ffffc601ffff6643ffffc845ffffa646fffff648ffff9c49ffff6253ffff128cffff188cffff288cffff348cffff548cffffcc90ffffd892ffffc29fffff40b6ffffb6e7ffff08f5ffffd2f6ffff14faffff4efaffff30fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -492,7 +492,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -501,15 +501,15 @@ MonoBehaviour:
     y: 0
     width: 749
     height: 271
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 13}
+  m_MinSize: {x: 232, y: 271}
+  m_MaxSize: {x: 10002, y: 10021}
+  m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
   - {fileID: 13}
   - {fileID: 14}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -549,19 +549,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scripts/Home Scripts
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scripts/Home Scripts
   m_LastFoldersGridSize: 16
   m_LastProjectPath: /Users/lukasjarasunas/Desktop/version-control/Rhythm Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 849e0000
-    m_LastClickedID: 40580
+    m_SelectedIDs: 62710100
+    m_LastClickedID: 94562
     m_ExpandedIDs: 00000000da3c00000e3d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -590,7 +590,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 00000000da3c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -615,26 +615,26 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: c0e5ffff
-    m_LastClickedInstanceID: -6720
+    m_SelectedInstanceIDs: 5a2dfeff
+    m_LastClickedInstanceID: -119462
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 3231000010130000aa170000e61a0000cea200007cb30000f81a0000e6110000e0120000ea130000228a0000000000008846000064860000fa530000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Beat Circle
-      m_OriginalName: Beat Circle
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 40584
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 11}
+      m_ClientGUIView: {fileID: 0}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
