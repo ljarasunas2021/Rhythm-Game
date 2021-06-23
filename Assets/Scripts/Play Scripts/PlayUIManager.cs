@@ -36,8 +36,6 @@ public class PlayUIManager : MonoBehaviour
 
     public void RateTiming(int note, float accuracy)
     {
-        Debug.Log(accuracy);
-
         TimingRating rating = TimingRating.Miss;
         if (accuracy > perfectGreatThreshold)
         {

@@ -152,16 +152,13 @@ public class BeatsScorer : MonoBehaviour
             return false;
         }
 
-        KeyCode[] keys = new KeyCode[] { KeyCode.H, KeyCode.J, KeyCode.K, KeyCode.D, KeyCode.F, KeyCode.G };
-
-
         if (down)
         {
-            return Input.GetKeyDown(keys[note - 1]);
+            return Input.GetKeyDown(GameManager.instance.inputs[note]);
         }
         else
         {
-            return Input.GetKeyUp(keys[note - 1]);
+            return Input.GetKeyUp(GameManager.instance.inputs[note]);
         }
     }
 
@@ -172,7 +169,7 @@ public class BeatsScorer : MonoBehaviour
             return false;
         }
 
-        return Input.GetKeyDown(KeyCode.Space);
+        return Input.GetKeyDown(GameManager.instance.inputs[0]);
     }
 
     private void SetNextBeats()

@@ -12,12 +12,13 @@ public class HomeUIManager : MonoBehaviour
     
     public Dropdown optionsDropdown, songDropdown;
     public InputField createNewIF;
-    public GameObject standardMenu, optionsMenu, createNewMenu;
+    public GameObject standardMenu, optionsMenu, createNewMenu, inputMenu, enterYourInput;    
 
     private TextAsset savesFile;
     private bool play = true;
     private int selectedOption = 0, selectedSong = 0;
     private List<Save> saves;
+    private int waitingForInput = -1;
 
     void Awake()
     {
@@ -58,25 +59,32 @@ public class HomeUIManager : MonoBehaviour
         {
             songDropdown.options.Add(new Dropdown.OptionData(clip.name));
         }
+
+        RefreshInputMenu();
     }
 
     public void Play()
     {
         play = true;
-        ShowStandardMenu(false);
+        ShowOptionsMenu();
         ShowCreateNew(false);
     }
 
     public void Edit()
     {
         play = false;
-        ShowStandardMenu(false);
+        ShowOptionsMenu();
         ShowCreateNew(true);
+    }
+
+    public void Input()
+    {
+        ShowInputMenu();
     }
 
     public void Back()
     {
-        ShowStandardMenu(true);
+        ShowStandardMenu();
     }
 
     public void Go()
@@ -112,14 +120,67 @@ public class HomeUIManager : MonoBehaviour
         selectedSong = songDropdown.value;
     }
 
-    public void ShowStandardMenu(bool show)
+    public void ShowStandardMenu()
     {
-        standardMenu.SetActive(show);
-        optionsMenu.SetActive(!show);
+        standardMenu.SetActive(true);
+        optionsMenu.SetActive(false);
+        inputMenu.SetActive(false);
+    }
+
+    public void ShowOptionsMenu()
+    {
+        standardMenu.SetActive(false);
+        optionsMenu.SetActive(true);
+        inputMenu.SetActive(false);
+    }
+
+    public void ShowInputMenu()
+    {
+        standardMenu.SetActive(false);
+        optionsMenu.SetActive(false);
+        inputMenu.SetActive(true);
     }
 
     public void ShowCreateNew(bool show)
     {
         createNewMenu.SetActive(show);
     }
+
+    public void ClickInputButton(int button)
+    {
+        waitingForInput = button;
+        EnterInput(true);
+    }
+
+    private void OnGUI()
+    {
+        Event keyEvent = Event.current;
+        if (keyEvent.isKey && waitingForInput != -1)
+        {
+            GameManager.instance.inputs[waitingForInput] = keyEvent.keyCode;
+            RefreshInputMenu();
+            waitingForInput = -1;
+            EnterInput(false);
+            GameManager.instance.SaveInputs();
+        }
+    }
+
+    private void RefreshInputMenu()
+    {
+        for (int i = 0; i < 7; i++)
+        {
+            string baseStr = "Note " + i + ": ";
+            if (i == 0)
+            {
+                baseStr = "Scratch: ";
+            }
+            inputMenu.transform.GetChild(i).transform.GetChild(0).GetComponent<Text>().text = baseStr + GameManager.instance.inputs[i].ToString();
+        }
+    }
+
+    private void EnterInput(bool show)
+    {
+        inputMenu.SetActive(!show);
+        enterYourInput.SetActive(show);
+    } 
 }
