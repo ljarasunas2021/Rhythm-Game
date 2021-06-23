@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Newtonsoft.Json;
+using UnityEditor;
 
 public class HomeUIManager : MonoBehaviour
 {
@@ -12,8 +13,8 @@ public class HomeUIManager : MonoBehaviour
     public Dropdown optionsDropdown, songDropdown;
     public InputField createNewIF;
     public GameObject standardMenu, optionsMenu, createNewMenu;
-    public TextAsset savesFile;
 
+    private TextAsset savesFile;
     private bool play = true;
     private int selectedOption = 0, selectedSong = 0;
     private List<Save> saves;
@@ -31,6 +32,8 @@ public class HomeUIManager : MonoBehaviour
 
     private void Start()
     {
+        savesFile = (TextAsset)AssetDatabase.LoadAssetAtPath("Assets/Data/Saves.json", typeof(TextAsset));
+
         Saves savesObj;
         if (savesFile.text.Length > 2)
         {

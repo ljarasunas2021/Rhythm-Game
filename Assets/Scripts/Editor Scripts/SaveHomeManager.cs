@@ -10,9 +10,10 @@ using Newtonsoft.Json;
 public class SaveHomeManager : MonoBehaviour
 {
     public static SaveHomeManager instance;
+    
+    public InputField save;
 
-    public TextAsset savesFile;
-    public InputField save;    
+    private TextAsset savesFile;
 
     private void Awake()
     {
@@ -24,7 +25,7 @@ public class SaveHomeManager : MonoBehaviour
             Debug.LogError("An instance of SaveHomeManager already exists");
         }
 
-        save.text = GameManager.instance.savedName;       
+        save.text = GameManager.instance.savedName;        
     }
 
     public void Save()
@@ -35,6 +36,8 @@ public class SaveHomeManager : MonoBehaviour
             {
                 beat.mover = null;
             }
+
+            savesFile = (TextAsset)AssetDatabase.LoadAssetAtPath("Assets/Data/Saves.json", typeof(TextAsset));
 
             Saves saves;
             if (savesFile.text.Length <= 2)
@@ -64,7 +67,6 @@ public class SaveHomeManager : MonoBehaviour
             }
 
             string json = JsonConvert.SerializeObject(saves, Formatting.Indented, GameManager.instance.settings);
-            Debug.Log(json);
             File.WriteAllText(AssetDatabase.GetAssetPath(savesFile), json);
             EditorUtility.SetDirty(savesFile);
         }
@@ -73,6 +75,7 @@ public class SaveHomeManager : MonoBehaviour
     public void Home()
     {
         SceneManager.LoadScene("Home");
+        GameManager.instance.audioSource.Stop();
     }
 }
 

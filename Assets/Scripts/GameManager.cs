@@ -42,5 +42,10 @@ public class GameManager : MonoBehaviour
         savedName = save.name;
         beats = save.beats;
         audioClip = audioClips[save.audioClipIndex];
-    }    
+    }
+
+    public bool InPlayScene()
+    {
+        return SceneManager.GetActiveScene().name == "Play";
+    }
 }

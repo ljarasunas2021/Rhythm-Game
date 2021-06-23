@@ -63,11 +63,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\BeatClasses.cs" />
+    <Compile Include="Assets\Scripts\Beats.cs" />
+    <Compile Include="Assets\Scripts\BeatsMover.cs" />
     <Compile Include="Assets\Scripts\Editor Scripts\BeatCircle.cs" />
     <Compile Include="Assets\Scripts\Editor Scripts\BeatCircles.cs" />
-    <Compile Include="Assets\Scripts\Editor Scripts\BeatClasses.cs" />
-    <Compile Include="Assets\Scripts\Editor Scripts\Beats.cs" />
-    <Compile Include="Assets\Scripts\Editor Scripts\BeatsMover.cs" />
     <Compile Include="Assets\Scripts\Editor Scripts\EditorManager.cs" />
     <Compile Include="Assets\Scripts\Editor Scripts\EditorUIManager.cs" />
     <Compile Include="Assets\Scripts\Editor Scripts\SaveHomeManager.cs" />
@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\Editor Scripts\Waveform.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Home Scripts\HomeUIManager.cs" />
+    <Compile Include="Assets\Scripts\Play Scripts\BeatsScorer.cs" />
     <Compile Include="Assets\Scripts\Play Scripts\PlayUIManager.cs" />
     <Reference Include="UnityEngine">
       <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
