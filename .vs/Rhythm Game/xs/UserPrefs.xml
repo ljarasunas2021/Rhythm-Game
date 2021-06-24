@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{39619D8C-3F6C-F370-3E5A-57A3A31FD1F5}|">
+  <MonoDevelop.Ide.ItemProperties.Aot.Tests PreferredExecutionTarget="f8869581-4b05-49b5-adef-919955dcb30f" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Play Scripts/PlayUIManager.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Beats.cs" Line="42" Column="10" />
+      <File FileName="Assets/Scripts/Editor Scripts/SaveHomeManager.cs" Line="1" Column="17" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="24" Column="42" />
+      <File FileName="Assets/Scripts/Home Scripts/HomeUIManager.cs" Line="57" Column="32" />
+      <File FileName="Assets/Scripts/BeatsMover.cs" Line="81" Column="30" />
+      <File FileName="Assets/Scripts/Editor Scripts/EditorManager.cs" Line="98" Column="73" />
+      <File FileName="Assets/Scripts/Editor Scripts/BeatCircle.cs" Line="25" Column="51" />
+      <File FileName="Assets/Scripts/BeatClasses.cs" Line="43" Column="46" />
+      <File FileName="Assets/Scripts/Play Scripts/BeatsScorer.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Editor Scripts/BeatCircles.cs" Line="30" Column="48" />
+      <File FileName="Assets/Scripts/Play Scripts/PlayUIManager.cs" Line="38" Column="28" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Rhythm Game" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Editor Scripts" expanded="True" />
+                <Node name="Home Scripts" expanded="True" />
+                <Node name="Play Scripts" expanded="True">
+                  <Node name="PlayUIManager.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f8869581-4b05-49b5-adef-919955dcb30f" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

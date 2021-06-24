@@ -1,0 +1,1575 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{18604E23-BDA0-646E-1DB8-2A9E8EF39A04}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_2019_4_12;UNITY_2019_4;UNITY_2019;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE;PLATFORM_STANDALONE_OSX;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_GAMECENTER;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_SPATIALTRACKING;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_4_6;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
+    <UnityProjectType>GamePlugins:3</UnityProjectType>
+    <UnityBuildTarget>StandaloneOSX:2</UnityBuildTarget>
+    <UnityVersion>2019.4.12f1</UnityVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.TestConsole\Program.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Benchmarks\BenchmarkConstants.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Benchmarks\DeserializeBenchmarks.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Benchmarks\DeserializeComparisonBenchmarks.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Benchmarks\JTokenBenchmarks.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Benchmarks\JValueConvertBenchmarks.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Benchmarks\JsonTextReaderBenchmarks.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Benchmarks\JsonTextWriterBenchmarks.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Benchmarks\LargeJArrayBenchmarks.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Benchmarks\LowLevelBenchmarks.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Benchmarks\Runner.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Benchmarks\SerializeBenchmarks.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Benchmarks\SerializeComparisonBenchmarks.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Benchmarks\XmlNodeConverterBenchmarks.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Bson\BsonReaderAsyncTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Bson\BsonReaderTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Bson\BsonWriterAsyncTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Bson\BsonWriterTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Converters\BinaryConverterTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Converters\CustomCreationConverterTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Converters\DataSetConverterTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Converters\DataTableConverterTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Converters\DiscriminatedUnionConverterTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Converters\ExpandoObjectConverterTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Converters\GenericJsonConverterTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Converters\IsoDateTimeConverterTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Converters\JavaScriptDateTimeConverterTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Converters\KeyValuePairConverterTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Converters\ObjectIdConverterTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Converters\RegexConverterTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Converters\StringEnumConverterTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Converters\UnixDateTimeConverterTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Converters\VersionConverterTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Converters\XmlNodeConverterTest.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\DemoTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\ConditionalPropertiesTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\ConvertingJsonAndXmlTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\JsonSchemaTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\LinqToJsonTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\PerformanceTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\ReadingAndWritingJsonTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Bson\DeserializeFromBson.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Bson\DeserializeFromBsonCollection.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Bson\SerializeToBson.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Json\CustomJsonReader.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Json\CustomJsonWriter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Json\ReadJsonWithJsonTextReader.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Json\ReadMultipleContentWithJsonReader.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Json\WriteJsonWithJsonTextWriter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\JsonPath\ErrorWhenNoMatchQuery.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\JsonPath\QueryJsonSelectToken.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\JsonPath\QueryJsonSelectTokenEscaped.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\JsonPath\QueryJsonSelectTokenJsonPath.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\JsonPath\QueryJsonSelectTokenWithLinq.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\JsonPath\RegexQuery.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\JsonPath\StrictEqualsQuery.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\Clone.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\CreateJsonAnonymousObject.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\CreateJsonCollectionInitializer.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\CreateJsonDeclaratively.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\CreateJsonDynamic.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\CreateJsonJTokenWriter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\CreateJsonManually.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\CreateReader.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\CreateWriter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\DeepEquals.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\DeserializeWithLinq.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\FromObject.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\JObjectProperties.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\JTokenAnnotation.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\JValueCast.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\JValueValue.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\MergeJson.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\ModifyJson.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\ParseJsonAny.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\ParseJsonArray.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\ParseJsonObject.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\QueryJson.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\QueryJsonDynamic.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\QueryJsonIgnoreCase.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\QueryJsonLinq.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\ReadJTokenFromBson.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\ReadJson.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\SerializeWithLinq.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\ToObjectComplex.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\ToObjectGeneric.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\ToObjectType.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\ToString.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\ToStringJsonConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\WriteJTokenToBson.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Linq\WriteToJsonFile.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Schema\CreateJsonSchemaManually.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Schema\JTokenIsValid.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Schema\JTokenIsValidWithMessages.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Schema\JTokenValidateWithEvent.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Schema\JsonSchemaParse.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Schema\JsonValidatingReaderAndSerializer.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Schema\LoadJsonSchemaFromFile.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Schema\RefJsonSchemaResolver.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Schema\SaveJsonSchemaToFile.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\CustomContractResolver.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\CustomJsonConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\CustomJsonConverterGeneric.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\CustomTraceWriter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\DataContractAndDataMember.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\DefaultSettings.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\DefaultValueAttributeIgnore.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\DefaultValueHandlingIgnore.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\DeserializeAnonymousType.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\DeserializeCollection.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\DeserializeConstructorHandling.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\DeserializeCustomCreationConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\DeserializeDataSet.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\DeserializeDateFormatString.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\DeserializeDictionary.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\DeserializeExtensionData.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\DeserializeImmutableCollections.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\DeserializeMetadataPropertyHandling.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\DeserializeMissingMemberHandling.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\DeserializeObject.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\DeserializeObjectCreationHandling.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\DeserializeWithDependencyInjection.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\DeserializeWithJsonSerializerFromFile.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\ErrorHandlingAttribute.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\ErrorHandlingEvent.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\JsonConstructorAttribute.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\JsonConverterAttributeClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\JsonConverterAttributeProperty.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\JsonObjectAttributeOptIn.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\JsonObjectAttributeOverrideIEnumerable.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\JsonPropertyItemLevelSetting.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\JsonPropertyName.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\JsonPropertyOrder.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\JsonPropertyPropertyLevelSetting.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\JsonPropertyRequired.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\MaxDepth.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\NamingStrategyAttributes.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\NamingStrategyCamelCase.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\NamingStrategyKebabCase.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\NamingStrategySkipDictionaryKeys.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\NamingStrategySkipSpecifiedNames.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\NamingStrategySnakeCase.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\NullValueHandlingIgnore.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\PopulateObject.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\PreserveReferencesHandlingObject.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\PropertyJsonIgnore.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\ReferenceLoopHandlingIgnore.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\SerializationCallbackAttributes.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\SerializeCollection.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\SerializeConditionalProperty.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\SerializeContractResolver.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\SerializeDataSet.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\SerializeDateFormatHandling.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\SerializeDateFormatString.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\SerializeDateTimeZoneHandling.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\SerializeDictionary.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\SerializeExtensionData.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\SerializeImmutableCollections.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\SerializeObject.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\SerializeRawJson.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\SerializeSerializationBinder.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\SerializeTypeNameHandling.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\SerializeUnindentedJson.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\SerializeWithJsonConverters.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\SerializeWithJsonSerializerToFile.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Serializer\TraceWriter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Xml\ConvertJsonToXml.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Xml\ConvertXmlToJson.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\Samples\Xml\ConvertXmlToJsonForceArray.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\SerializationTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Documentation\TraceWriterTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\ExceptionTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\FileSystemEntityModel.Designer.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue0198.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue0573.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1307.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1321.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1322.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1327.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1351.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1353.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1362.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1396.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1404.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1445.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1460.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1461.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1512.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1541.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1545.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1552.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1561.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1566.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1569.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1574.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1576.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1592.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1593.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1597.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1598.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1619.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1620.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1642.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1682.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1708.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1711.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1719.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1725.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1734.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1752.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1757.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1778.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1796.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1798.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1834.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1837.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1874.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1877.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1962.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue1984.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue2082.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue2156.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue2165.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue2176.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue2444.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue2450.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue2484.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Issues\Issue2492.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\JsonArrayAttributeTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\JsonConvertTest.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\JsonTextReaderTests\ExceptionHandlingAsyncTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\JsonTextReaderTests\ExceptionHandlingTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\JsonTextReaderTests\FloatAsyncTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\JsonTextReaderTests\FloatTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\JsonTextReaderTests\MiscAsyncTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\JsonTextReaderTests\MiscTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\JsonTextReaderTests\ParseAsyncTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\JsonTextReaderTests\ParseTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\JsonTextReaderTests\ReadAsyncTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\JsonTextReaderTests\ReadTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\JsonTextWriterAsyncTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\JsonTextWriterTest.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\JsonValidatingReaderTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Linq\AnnotationsTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Linq\ComponentModel\BindingTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Linq\ComponentModel\JPropertyDescriptorTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Linq\DynamicTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Linq\JArrayTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Linq\JConstructorAsyncTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Linq\JConstructorTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Linq\JObjectAsyncTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Linq\JObjectTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Linq\JPropertyAsyncTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Linq\JPropertyTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Linq\JRawTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Linq\JTokenAsyncTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Linq\JTokenEqualityComparerTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Linq\JTokenReaderAsyncTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Linq\JTokenReaderTest.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Linq\JTokenTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Linq\JTokenWriterAsyncTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Linq\JTokenWriterTest.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Linq\JValueAsyncTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Linq\JValueTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Linq\JsonPath\JPathExecuteTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Linq\JsonPath\JPathParseTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Linq\JsonPath\QueryExpressionTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Linq\LinqToJsonAsyncTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Linq\LinqToJsonTest.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Linq\MergeTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\LinqToSql\Department.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\LinqToSql\DepartmentConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\LinqToSql\GuidByteArrayConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\LinqToSql\LinqToSqlClasses.designer.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\LinqToSql\LinqToSqlClassesSerializationTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\LinqToSql\Person.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\LinqToSql\Role.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Properties\AssemblyInfo.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Schema\ExtensionsTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Schema\JsonSchemaBuilderTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Schema\JsonSchemaGeneratorTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Schema\JsonSchemaModelBuilderTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Schema\JsonSchemaNodeTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Schema\JsonSchemaSpecTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Schema\JsonSchemaTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Schema\PerformanceTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Serialization\CamelCaseNamingStrategyTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Serialization\CamelCasePropertyNamesContractResolverTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Serialization\ConstructorHandlingTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Serialization\ContractResolverTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Serialization\DateTimeZoneHandlingTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Serialization\DefaultValueHandlingTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Serialization\DependencyInjectionTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Serialization\DynamicConcreteTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Serialization\DynamicTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Serialization\EntitiesSerializationTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Serialization\ExtensionDataTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Serialization\FSharpTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Serialization\ImmutableCollectionsTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Serialization\JsonPropertyCollectionTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Serialization\JsonSerializerCollectionsTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Serialization\JsonSerializerTest.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Serialization\KebabCaseNamingStrategyTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Serialization\MetadataPropertyHandlingTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Serialization\MissingMemberHandlingTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Serialization\NamingStrategyEquality.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Serialization\NullValueHandlingTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Serialization\PopulateTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Serialization\PreserveReferencesHandlingTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Serialization\ReferenceLoopHandlingTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Serialization\ReflectionAttributeProviderTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Serialization\SerializationErrorHandlingTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Serialization\SerializationEventAttributeTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Serialization\ShouldSerializeTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Serialization\SnakeCaseNamingStrategyTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Serialization\TraceWriterTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Serialization\TypeNameHandlingTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Serialization\WebApiIntegrationTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestFixtureBase.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\A.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\AATestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Aa.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\AbstractDictionaryTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\AbstractGenericBase.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\AbstractImplementationDictionaryTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\AbstractImplementationListTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\AbstractImplementationTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\AbstractListTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\AbstractTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Address.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Animal.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\AnswerFilterModel.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Antworten.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ArgumentConverterPrecedenceClassConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Article.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ArticleCollection.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\AttachmentReadConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\B.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\BBTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\BadJsonPropertyClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Bar.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Bar1.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\BaseClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\BaseClassVirtual.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\BaseClassWithProtectedVirtual.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\BaseConstructorType.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\BaseDataContract.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\BaseDataContractWithHidden.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\BaseType.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\BaseWithContract.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\BaseWithPrivate.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\BaseWithoutContract.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Bb.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Binding.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Binding_DisallowNull.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\BusRun.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ByteArrayTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Car.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ChildClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ChildClassVirtual.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ChildClassWithProtectedOverridePlusJsonProperty.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ChildDataContractWithHidden.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\CircularConstructor1.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\CircularConstructor2.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\CircularReferenceClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\CircularReferenceWithIdClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ClassAndMemberConverterClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ClassAttributeBase.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ClassAttributeDerived.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ClassConverterPrecedenceClassConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ClassWithArray.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ClassWithException.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ClassWithGuid.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ClassWithImplicitOperator.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ClassWithTimeSpan.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ClientMap.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\CollectionClassAttributeDerived.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\CommentTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\CommentTestObject.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\CompletionDataRequest.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ComplexItem.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Component.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Computer.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ConsoleWriter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ConstantTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ConstructorAndDefaultValueAttributeTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ConstructorAndRequiredTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ConstructorCaseSensitivityClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ConstructorCompexIgnoredProperty.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ConstructorReadonlyFields.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Container.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Content.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ContentBaseClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ContentSubClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ConverableMembers.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ConvertableIntTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ConverterPrecedenceClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ConverterPrecedenceClassConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ConvertibleId.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ConvertibleInt.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\CustomerDataSet.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\CustomerWithMetadataType.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\DTOWithParameterisedConstructor.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\DTOWithoutParameterisedConstructor.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\DataContractJsonSerializerTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\DataContractPrivateMembers.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\DataContractSerializationAttributesClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\DateTimeErrorObjectCollection.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\DateTimeOffsetTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\DateTimeOffsetWrapper.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\DateTimeTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\DateTimeWrapper.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\DecimalTest.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\DecimalTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\DefaultValueAttributeTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\DerivedConstructorType.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\DerivedEvent.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\DerivedSerializationEventTestObject.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\DerivedType.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\DerivedWithPrivate.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\DeserializeStringConvert.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\DictionaryInterfaceClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\DictionaryKey.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\DictionaryKeyCast.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\DictionaryKeyContractResolver.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\DictionaryWithNoDefaultConstructor.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\DictionaryWithNoNull.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\DirectoryAccount.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\DoubleClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\EmployeeReference.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\EmptyJsonValueTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\EncodingReadConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\EnumA.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\EnumerableArrayPropertyClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\EnumerableClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ErroringClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ErroringJsonConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ErroringTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Events\Event.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Events\Event1.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Events\EventType.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ExistingValueClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\FaqItem.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Foo.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Foo1.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Foo64.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\FooBar1.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\FooConstructor.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\FooRequired.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Friend.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\GameObject.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\GenericIEnumerableWithImplicitConversion.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\GenericImpl.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\GenericListAndDictionaryInterfaceProperties.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\GeoCoding\AddressDetails.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\GeoCoding\AdministrativeArea.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\GeoCoding\Country.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\GeoCoding\GoogleMapGeocoderStructure.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\GeoCoding\Locality.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\GeoCoding\Placemark.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\GeoCoding\Point.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\GeoCoding\PostalCode.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\GeoCoding\Status.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\GeoCoding\SubAdministrativeArea.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\GeoCoding\Thoroughfare.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\GeometricForms\Shape.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\GeometricForms\Tags.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\GetOnlyPropertyClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\HasByteArray.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\HolderClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Human.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\IInterfaceObject.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\IKeyValueId.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\IMainClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\IMyInterface.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\IPrivateImplementationA.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\IPrivateImplementationB.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\IPrivateOverriddenImplementation.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ISerializableTestObject.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ISerializableWithoutAttributeTestObject.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ISubclass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ISubclassBase.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\IdReferenceResolver.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\IgnoreDataMemberTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\IgnoredPropertiesContractResolver.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\IgnoredPropertiesTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\IgnoredProperty.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ImmutableStruct.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ImplementInterfaceObject.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\IncompatibleJsonAttributeClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\IncompleteTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\IntToFloatConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\InterfacePropertyTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Invoice.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Item.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ItemBase.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ItemConverterTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ItemConverterTestConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\JRawValueTestObject.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\JTokenTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\JaggedArray.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\JsonIgnoreAttributeOnClassTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\JsonIgnoreAttributeTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\JsonPropertyClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\JsonPropertyConverterContractResolver.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\JsonPropertyConverterTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\JsonPropertyWithHandlingValues.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\JsonReaderStubWithIsClosed.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\JsonTextReaderTests\FakeArrayPool.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\JsonTextReaderTests\SlowStream.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\JsonTextReaderTests\ToggleReaderError.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\JsonTextReaderTests\UnmanagedResourceFakingJsonReader.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\KVPair.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\KeyValueId.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\KeyValueTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Link.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ListErrorObject.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ListErrorObjectCollection.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ListOfIds.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ListSourceTest.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ListTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\LogEntry.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\LogEvent.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\MailAddressReadConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\MainClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\MemberConverterClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\MemberConverterPrecedenceClassConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\MessageWithIsoDate.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\MethodExecutorObject.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\MetroColorConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\MetroPropertyNameResolver.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\MetroStringConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ModelStateDictionary.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Money\Currency.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Money\Tags.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Movie.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\MovieWithJsonObjectNullValueHandlingIgnore.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\MovieWithJsonObjectNullValueHandlingInclude.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\MultiIndexBase.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\MultiIndexSuper.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\MultipleItemsClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\MultipleParametrizedConstructorsJsonConstructor.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\MyClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\MyEnum.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\MyFactory.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\MyInterfaceConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\MyObservableObject.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\MyTuple.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\MyTuplePartial.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Name.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\NameContainer.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\NameContainerConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\NoConstructorReadOnlyCollection.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\NoConstructorReadOnlyDictionary.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\NonDefaultConstructorWithReadOnlyCollectionProperty.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\NonDefaultConstructorWithReadOnlyDictionaryProperty.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\NonPublicConstructorWithJsonConstructor.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\NonRequest.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\NullTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\NullableDateTimeTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\NullableFloats.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\NullableGuid.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\NullableGuidCountingJsonTextWriter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\NullableLongTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\NullableStructPropertyClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\NullableTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ObjectArrayPropertyTest.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ObservableObject.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\OptInClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Organization\Employee.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Organization\IPerson.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Organization\Manager.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Organization\Person.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Organization\PersonPropertyClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Organization\WagePerson.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Pair.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ParticipantEntity.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\PersonConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\PersonError.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\PersonRaw.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\PersonReference.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\PersonSerializable.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\PersonWithPrivateConstructor.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\PhoneNumber.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\PocoDataContractSerializationAttributesClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Pos.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\PosConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\PosDouble.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\PosDoubleConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\PreserveReferencesCallbackTestObject.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\PrivateConstructorTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\PrivateConstructorWithPublicParameterizedConstructorTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\PrivateImplementationAClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\PrivateImplementationBClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\PrivateMembersClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\PrivateMembersClassWithAttributes.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\PrivateSetterBase.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\PrivateSetterDerived.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Product.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ProductCollection.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ProductShort.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\PropertyCase.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\PropertyItemConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\PublicConstructorOverridenByJsonConstructor.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\PublicParameterizedConstructorRequiringConverterTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\PublicParameterizedConstructorRequiringConverterWithParameterAttributeTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\PublicParameterizedConstructorRequiringConverterWithPropertyAttributeTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\PublicParameterizedConstructorTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\PublicParameterizedConstructorWithNonPropertyParameterTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\PublicParameterizedConstructorWithPropertyNameConflict.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\PublicParameterizedConstructorWithPropertyNameConflictWithAttribute.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Ratio.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ReflectionContractResolver.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\RequestOnly.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\RequiredMembersClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\RequiredObject.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\RequiredPropertyConstructorTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\RequiredPropertyTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ResponseWithNewGenericProperty.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ResponseWithNewGenericPropertyOverride.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ResponseWithNewGenericPropertyVirtual.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\RoleTransfer.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\RoleTransferDirection.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\RoleTransferOperation.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\RootObject.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\SearchResult.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\SelectListItem.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\SerializableContractResolver.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\SerializationEventTestDictionary.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\SerializationEventTestList.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\SerializationEventTestObject.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\SerializationEventTestObjectWithConstructor.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\SetOnlyPropertyClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\SetOnlyPropertyClass2.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Shortie.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\SimpleResponse.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\SqlTypesDataSet.Designer.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\StaticTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Store.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\StoreColor.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\StringDictionaryTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\StructISerializable.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\StructTest.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\StructWithAttribute.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\SubKlass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\SubWithContractNewProperties.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\SubWithContractVirtualProperties.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\SubWithoutContractNewProperties.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\SubWithoutContractVirtualProperties.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Subclass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\SuperKlass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Test.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\TestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\TestClassConvertable.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\TestComponent.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\TestComponentSimple.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\TestObject.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\ThisGenericTest.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\TimeZoneOffsetObject.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\TraceWriter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\TypeClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\TypeConverterJsonConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\TypeConverterSize.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\TypeConverterSizeConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\TypedSubHashtable.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\UriGuidTimeSpanTestClass.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\UserNullable.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Vector.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\VectorParent.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\VersionKeyedCollection.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\VersionOld.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\VirtualOverrideNewBaseObject.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\VirtualOverrideNewChildObject.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\VirtualOverrideNewChildWithDifferentOverrideObject.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Widget.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\Widget1.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\WidgetId.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\WidgetId1.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\WidgetIdJsonConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\WithEnums.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\XNodeTestObject.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\TestObjects\XmlNodeTestObject.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Utilities\ConvertUtilsTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Utilities\DateTimeUtilsTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Utilities\DynamicReflectionDelegateFactoryTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Utilities\EnumUtilsTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Utilities\ExpressionReflectionDelegateFactoryTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Utilities\LateboundReflectionDelegateFactoryTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Utilities\ReflectionUtilsTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\Utilities\StringUtilsTests.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Bson\BsonBinaryType.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Bson\BsonBinaryWriter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Bson\BsonObjectId.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Bson\BsonReader.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Bson\BsonToken.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Bson\BsonType.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Bson\BsonWriter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\ConstructorHandling.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Converters\BinaryConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Converters\BsonObjectIdConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Converters\CustomCreationConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Converters\DataSetConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Converters\DataTableConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Converters\DateTimeConverterBase.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Converters\DiscriminatedUnionConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Converters\EntityKeyMemberConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Converters\ExpandoObjectConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Converters\IsoDateTimeConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Converters\JavaScriptDateTimeConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Converters\KeyValuePairConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Converters\RegexConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Converters\StringEnumConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Converters\UnixDateTimeConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Converters\VersionConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Converters\XmlNodeConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\DateFormatHandling.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\DateParseHandling.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\DateTimeZoneHandling.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\DefaultJsonNameTable.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\DefaultValueHandling.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\FloatFormatHandling.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\FloatParseHandling.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\FormatterAssemblyStyle.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Formatting.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\IArrayPool.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\IJsonLineInfo.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\JsonArrayAttribute.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\JsonConstructorAttribute.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\JsonContainerAttribute.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\JsonConvert.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\JsonConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\JsonConverterAttribute.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\JsonConverterCollection.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\JsonDictionaryAttribute.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\JsonException.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\JsonExtensionDataAttribute.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\JsonIgnoreAttribute.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\JsonNameTable.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\JsonObjectAttribute.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\JsonPosition.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\JsonPropertyAttribute.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\JsonReader.Async.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\JsonReader.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\JsonReaderException.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\JsonRequiredAttribute.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\JsonSerializationException.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\JsonSerializer.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\JsonSerializerSettings.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\JsonTextReader.Async.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\JsonTextReader.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\JsonTextWriter.Async.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\JsonTextWriter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\JsonToken.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\JsonValidatingReader.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\JsonWriter.Async.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\JsonWriter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\JsonWriterException.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\CommentHandling.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\DuplicatePropertyNameHandling.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\Extensions.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\IJEnumerable.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JArray.Async.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JArray.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JConstructor.Async.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JConstructor.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JContainer.Async.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JContainer.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JEnumerable.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JObject.Async.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JObject.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JProperty.Async.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JProperty.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JPropertyDescriptor.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JPropertyKeyedCollection.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JRaw.Async.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JRaw.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JToken.Async.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JToken.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JTokenEqualityComparer.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JTokenReader.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JTokenType.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JTokenWriter.Async.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JTokenWriter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JValue.Async.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JValue.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JsonLoadSettings.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JsonMergeSettings.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JsonPath\ArrayIndexFilter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JsonPath\ArrayMultipleIndexFilter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JsonPath\ArraySliceFilter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JsonPath\FieldFilter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JsonPath\FieldMultipleFilter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JsonPath\JPath.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JsonPath\PathFilter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JsonPath\QueryExpression.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JsonPath\QueryFilter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JsonPath\QueryScanFilter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JsonPath\RootFilter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JsonPath\ScanFilter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JsonPath\ScanMultipleFilter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\JsonSelectSettings.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\LineInfoHandling.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\MergeArrayHandling.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Linq\MergeNullValueHandling.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\MemberSerialization.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\MetadataPropertyHandling.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\MissingMemberHandling.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\NullValueHandling.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\ObjectCreationHandling.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\PreserveReferencesHandling.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Properties\AssemblyInfo.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\ReferenceLoopHandling.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Required.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Schema\Extensions.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Schema\JsonSchema.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Schema\JsonSchemaBuilder.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Schema\JsonSchemaConstants.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Schema\JsonSchemaException.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Schema\JsonSchemaGenerator.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Schema\JsonSchemaModel.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Schema\JsonSchemaModelBuilder.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Schema\JsonSchemaNode.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Schema\JsonSchemaNodeCollection.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Schema\JsonSchemaResolver.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Schema\JsonSchemaType.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Schema\JsonSchemaWriter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Schema\UndefinedSchemaIdHandling.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Schema\ValidationEventArgs.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Schema\ValidationEventHandler.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\CachedAttributeGetter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\CamelCaseNamingStrategy.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\CamelCasePropertyNamesContractResolver.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\DefaultContractResolver.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\DefaultNamingStrategy.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\DefaultReferenceResolver.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\DefaultSerializationBinder.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\DiagnosticsTraceWriter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\DynamicValueProvider.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\ErrorContext.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\ErrorEventArgs.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\ExpressionValueProvider.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\FormatterConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\IAttributeProvider.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\IContractResolver.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\IReferenceResolver.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\ISerializationBinder.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\ITraceWriter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\IValueProvider.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\JsonArrayContract.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\JsonContainerContract.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\JsonContract.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\JsonDictionaryContract.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\JsonDynamicContract.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\JsonFormatterConverter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\JsonISerializableContract.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\JsonLinqContract.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\JsonObjectContract.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\JsonPrimitiveContract.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\JsonProperty.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\JsonPropertyCollection.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\JsonSerializerInternalBase.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\JsonSerializerInternalReader.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\JsonSerializerInternalWriter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\JsonSerializerProxy.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\JsonStringContract.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\JsonTypeReflector.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\KebabCaseNamingStrategy.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\MemoryTraceWriter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\NamingStrategy.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\ObjectConstructor.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\OnErrorAttribute.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\ReflectionAttributeProvider.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\ReflectionValueProvider.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\SerializationBinderAdapter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\SnakeCaseNamingStrategy.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\TraceJsonReader.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Serialization\TraceJsonWriter.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\SerializationBinder.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\StringEscapeHandling.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\TraceLevel.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\TypeNameAssemblyFormatHandling.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\TypeNameHandling.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\AotHelper.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\AsyncUtils.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\Base64Encoder.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\BidirectionalDictionary.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\CollectionUtils.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\CollectionWrapper.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\ConvertUtils.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\DateTimeParser.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\DateTimeUtils.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\DictionaryWrapper.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\DynamicProxy.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\DynamicProxyMetaObject.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\DynamicReflectionDelegateFactory.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\DynamicUtils.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\EnumInfo.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\EnumUtils.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\ExpressionReflectionDelegateFactory.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\FSharpUtils.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\ILGeneratorExtensions.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\ImmutableCollectionsUtils.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\JavaScriptUtils.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\JsonTokenUtils.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\LateBoundReflectionDelegateFactory.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\LinqBridge.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\MathUtils.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\MethodBinder.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\MethodCall.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\MiscellaneousUtils.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\NullableAttributes.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\ReflectionDelegateFactory.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\ReflectionObject.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\ReflectionUtils.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\StringBuffer.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\StringReference.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\StringUtils.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\StructMultiKey.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\ThreadSafeStore.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\TypeExtensions.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Utilities\ValidationUtils.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\WriteState.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\System.Web.Polyfill\HttpUtility.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\System.Web.Polyfill\Util\Helpers.cs" />
+    <Compile Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\System.Web.Polyfill\Util\HttpEncoder.cs" />
+    <None Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json\Resources\link.xml" />
+    <None Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json-for-Unity.Tests\Assets\link.xml" />
+    <None Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json-for-Unity.Tests\Assets\StreamingAssets\large_sample.xml" />
+    <None Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Doc\readme.txt" />
+    <None Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\large_sample.xml" />
+    <None Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Doc\license.txt" />
+    <None Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json-for-Unity.Tests\ProjectSettings\ProjectVersion.txt" />
+    <None Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json.Tests\PoisonText.txt" />
+    <None Include="Assets\Plugins\Newtonsoft.Json-for-Unity-master\Src\Newtonsoft.Json-for-Unity.Tests\Assets\StreamingAssets\PoisonText.txt" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TextCoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Microsoft.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.AppContext">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.NonGeneric.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.EventBasedAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TraceSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Dynamic.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.DriveInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Watcher.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.IsolatedStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.MemoryMappedFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Pipes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.UnmanagedMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Queryable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Rtc">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Http.Rtc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NameResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NetworkInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Ping.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.ILGeneration">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.ILGeneration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.Lightweight">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.Lightweight.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Reader.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Writer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.CompilerServices.VisualC.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Handles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Formatters.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Claims.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Csp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Principal.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.SecureString.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Duplex">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Duplex.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Http">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.NetTcp">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.NetTcp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Primitives">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Security">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Overlapped.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.ThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Timer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityScript">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityscript/UnityScript.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityScript.Lang">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityscript/UnityScript.Lang.dll</HintPath>
+    </Reference>
+    <Reference Include="Boo.Lang">
+      <HintPath>/Applications/Unity/Hub/Editor/2019.4.12f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>/Users/lukasjarasunas/Desktop/version-control/Rhythm Game/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>/Users/lukasjarasunas/Desktop/version-control/Rhythm Game/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>/Users/lukasjarasunas/Desktop/version-control/Rhythm Game/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>/Users/lukasjarasunas/Desktop/version-control/Rhythm Game/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>/Users/lukasjarasunas/Desktop/version-control/Rhythm Game/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+      <HintPath>/Users/lukasjarasunas/Desktop/version-control/Rhythm Game/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>/Users/lukasjarasunas/Desktop/version-control/Rhythm Game/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>/Users/lukasjarasunas/Desktop/version-control/Rhythm Game/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>/Users/lukasjarasunas/Desktop/version-control/Rhythm Game/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup></ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

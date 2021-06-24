@@ -1,0 +1,15 @@
+{
+  "$type": "Inputs, Assembly-CSharp",
+  "inputs": {
+    "$type": "UnityEngine.KeyCode[], UnityEngine.CoreModule",
+    "$values": [
+      32,
+      104,
+      106,
+      107,
+      100,
+      102,
+      103
+    ]
+  }
+}
