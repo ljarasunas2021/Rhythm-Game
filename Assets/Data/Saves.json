@@ -456,6 +456,27 @@
           ]
         },
         "audioClipIndex": 0
+      },
+      {
+        "$type": "Save, Assembly-CSharp",
+        "name": "test",
+        "beats": {
+          "$type": "System.Collections.Generic.List`1[[Beat, Assembly-CSharp]], mscorlib",
+          "$values": [
+            {
+              "$type": "HoldBeat, Assembly-CSharp",
+              "note": 4,
+              "duration": 3.0,
+              "accuracy": 0.0,
+              "beatAt": 7,
+              "beatType": 1,
+              "speed": 1.0,
+              "mover": null,
+              "destroyed": false
+            }
+          ]
+        },
+        "audioClipIndex": 1
       }
     ]
   }

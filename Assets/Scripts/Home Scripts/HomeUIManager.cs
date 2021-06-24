@@ -1,25 +1,31 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using Newtonsoft.Json;
-using UnityEditor;
 
+// Manage the key components of the UI in the home scene
 public class HomeUIManager : MonoBehaviour
 {
+    // singleton reference
     public static HomeUIManager instance;
-    
-    public Dropdown optionsDropdown, songDropdown;
+
+    // dropdown for the different saves and songs (if the user is creating a new beatmap)
+    public Dropdown saveDropdown, songDropdown;
+    // input field for the name of the new beat map
     public InputField createNewIF;
+    // menus to be displayed
     public GameObject standardMenu, optionsMenu, createNewMenu, inputMenu, enterYourInput;    
 
+    // file that contains all of the saved beatmaps
     private TextAsset savesFile;
+    // whether the user selected play or not (the user selected edit)
     private bool play = true;
-    private int selectedOption = 0, selectedSong = 0;
-    private List<Save> saves;
+    // the save and song options that were selected
+    private int selectedSave = 0, selectedSong = 0;
+    // the note that the class is waiting to change the user's input for (-1 means the script doesn't have to wait, 0 means the script is waiting for the user's input for a scratch beat, 1 means the script is waiting for the user's input for note 1, 2 --> note 2, 3 --> note 3, etc...
     private int waitingForInput = -1;
 
+    // singleton implementation
     void Awake()
     {
         if (instance == null)
@@ -31,28 +37,16 @@ public class HomeUIManager : MonoBehaviour
         }
     }
 
+    // setup the dropdowns and input menu
     private void Start()
-    {
-        savesFile = (TextAsset)AssetDatabase.LoadAssetAtPath("Assets/Data/Saves.json", typeof(TextAsset));
-
-        Saves savesObj;
-        if (savesFile.text.Length > 2)
-        {
-            savesObj = JsonConvert.DeserializeObject<Saves>(savesFile.text, GameManager.instance.settings); 
-        } else
-        {
-            savesObj = new Saves(new List<Save>());
-        }
-        
-        saves = savesObj.saves;
-
-        foreach (Save save in saves)
+    {        
+        foreach (Save save in GameManager.instance.saves)
         {
             foreach (Beat beat in save.beats)
             {
                 beat.mover = null;
             }
-            optionsDropdown.options.Add(new Dropdown.OptionData(save.name));
+            saveDropdown.options.Add(new Dropdown.OptionData(save.name));
         }
 
         foreach (AudioClip clip in GameManager.instance.audioClips)
@@ -63,44 +57,50 @@ public class HomeUIManager : MonoBehaviour
         RefreshInputMenu();
     }
 
+    // press the play button
     public void Play()
     {
         play = true;
         ShowOptionsMenu();
-        ShowCreateNew(false);
+        ShowCreateNewOption(false);
     }
 
+    // press the edit button
     public void Edit()
     {
         play = false;
         ShowOptionsMenu();
-        ShowCreateNew(true);
+        ShowCreateNewOption(true);
     }
 
+    // press the input button
     public void Input()
     {
         ShowInputMenu();
     }
 
+    // click the back button
     public void Back()
     {
         ShowStandardMenu();
     }
 
+    // click the go button to load the play scene or editor with the selected saved beatmap
     public void Go()
     {
-        if (play && saves.Count > 0)
+        if (play && GameManager.instance.saves.Count > 0)
         {
-            GameManager.instance.SetSave(saves[selectedOption]);
+            GameManager.instance.SetSave(GameManager.instance.saves[selectedSave]);
             SceneManager.LoadScene("Play");
         }
-        else if (saves.Count > 0)
+        else if (GameManager.instance.saves.Count > 0)
         {
-            GameManager.instance.SetSave(saves[selectedOption]);
+            GameManager.instance.SetSave(GameManager.instance.saves[selectedSave]);
             SceneManager.LoadScene("Editor");
         }
     }
 
+    // create a new beatmap save from the edit menu
     public void CreateNew()
     {
         if (createNewIF.text != "")
@@ -110,16 +110,19 @@ public class HomeUIManager : MonoBehaviour
         }
     }
 
+    // called when the user changes the save dropdown
     public void OnChangeDropdown()
     {
-        selectedOption = optionsDropdown.value;
+        selectedSave = saveDropdown.value;
     }
 
+    // called when the user changes the song dropdown
     public void OnChangeSongDropdown()
     {
         selectedSong = songDropdown.value;
     }
 
+    // show the play/edit/input menu
     public void ShowStandardMenu()
     {
         standardMenu.SetActive(true);
@@ -127,6 +130,7 @@ public class HomeUIManager : MonoBehaviour
         inputMenu.SetActive(false);
     }
 
+    // show the play/edit menu
     public void ShowOptionsMenu()
     {
         standardMenu.SetActive(false);
@@ -134,6 +138,7 @@ public class HomeUIManager : MonoBehaviour
         inputMenu.SetActive(false);
     }
 
+    // show the input menu
     public void ShowInputMenu()
     {
         standardMenu.SetActive(false);
@@ -141,17 +146,20 @@ public class HomeUIManager : MonoBehaviour
         inputMenu.SetActive(true);
     }
 
-    public void ShowCreateNew(bool show)
+    // show the create new beatmap option in the options menu
+    public void ShowCreateNewOption(bool show)
     {
         createNewMenu.SetActive(show);
     }
 
+    // click an input button in the input menu
     public void ClickInputButton(int button)
     {
         waitingForInput = button;
-        EnterInput(true);
+        ShowEnterInput(true);
     }
 
+    // handles custom input by reading the input and setting it appropriately
     private void OnGUI()
     {
         Event keyEvent = Event.current;
@@ -160,11 +168,12 @@ public class HomeUIManager : MonoBehaviour
             GameManager.instance.inputs[waitingForInput] = keyEvent.keyCode;
             RefreshInputMenu();
             waitingForInput = -1;
-            EnterInput(false);
+            ShowEnterInput(false);
             GameManager.instance.SaveInputs();
         }
     }
 
+    // refresh the text of buttons in the input menu
     private void RefreshInputMenu()
     {
         for (int i = 0; i < 7; i++)
@@ -178,7 +187,8 @@ public class HomeUIManager : MonoBehaviour
         }
     }
 
-    private void EnterInput(bool show)
+    // show the enter input text (and hide the input menu with it)
+    private void ShowEnterInput(bool show)
     {
         inputMenu.SetActive(!show);
         enterYourInput.SetActive(show);

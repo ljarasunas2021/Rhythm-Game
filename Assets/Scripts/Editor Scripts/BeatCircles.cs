@@ -1,13 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+// This class handles the addition of beat circles
 public class BeatCircles : MonoBehaviour
 {
+    //singleton reference
     public static BeatCircles instance;
 
+    // beat circle prefab
     public GameObject beatCircle;
 
+    // singleton implementation
     private void Awake()
     {
         if (instance == null)
@@ -20,6 +22,7 @@ public class BeatCircles : MonoBehaviour
         }
     }
 
+    // create a beat circle from its beat
     public void AddBeatCircle(Beat beat)
     {
         GameObject newBeatCircle = Instantiate(beatCircle, transform);                

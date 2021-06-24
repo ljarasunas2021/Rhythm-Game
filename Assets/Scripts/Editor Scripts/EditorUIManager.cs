@@ -1,17 +1,20 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
+// This class manages the key components of the UI in the editor
 public class EditorUIManager : MonoBehaviour
 {
+    // singleton reference
     public static EditorUIManager instance;
 
+    // texts to force user to select 1 or 2 notes
     public Text selectNote, selectTwoNotes;
+    // UI menus
     public GameObject addMenu, musicButtonMenu, beatsMenu, speedMenu, notesMenu, holdInput;
+    // input field to ask user for how long the beat should be held for
     public InputField holdInputField;
-    public Image waveform;
-    
+
+    // singleton implementation
     void Awake()
     {
         if (instance == null)
@@ -24,41 +27,49 @@ public class EditorUIManager : MonoBehaviour
         }
     }
 
+    // show the add menu
     public void ShowAddMenu(bool show)
     {
         addMenu.gameObject.SetActive(show);
     }
 
+    // show the music button menu
     public void ShowMusicButtonMenu(bool show)
     {
         musicButtonMenu.gameObject.SetActive(show);
     }
 
+    // show the beats menu
     public void ShowBeatsMenu(bool show)
     {
         beatsMenu.gameObject.SetActive(show);
     }
 
+    // show the speed menu
     public void ShowSpeedMenu(bool show)
     {
         speedMenu.gameObject.SetActive(show);
     }
 
+    // show the the select note text
     public void ShowSelectNote(bool show)
     {
         selectNote.gameObject.SetActive(show);
     }
 
+    // show the select two notes text
     public void ShowSelectTwoNotes(bool show)
     {
         selectTwoNotes.gameObject.SetActive(show);
     }
 
+    // show the hold input text
     public void ShowHoldInput(bool show)
     {
         holdInput.gameObject.SetActive(show);
     }
 
+    // called after the user has selected his/her first note for a double pressed beat to highlight that note
     public bool HighlightNote(int note)
     {
         Button button = notesMenu.transform.GetChild(note - 1).GetComponent<Button>();
@@ -66,6 +77,7 @@ public class EditorUIManager : MonoBehaviour
         return !button.interactable;
     }
 
+    // unhighlight any highlighted notes
     public void ResetHighlightedNotes()
     {
         foreach(Transform child in notesMenu.transform)
@@ -74,49 +86,9 @@ public class EditorUIManager : MonoBehaviour
         }
     }
 
+    // called after the user types in the hold duration that he/she wants a beat to have
     public void FinishTypingHoldDuration()
     {
         EditorManager.instance.FinishTypingHoldDuration(float.Parse(holdInputField.text));
-    }
-
-    public void DrawWaveForm(AudioClip audio)
-    {
-        Texture2D texture = PaintWaveformSpectrum(audio, .5f, 500, 100, Color.yellow);
-        waveform.overrideSprite = Sprite.Create(texture, new Rect(0f, 0f, texture.width, texture.height), new Vector2(0.5f, 0.5f));
-    }
-
-    public Texture2D PaintWaveformSpectrum(AudioClip audio, float saturation, int width, int height, Color col)
-    {
-        Texture2D tex = new Texture2D(width, height, TextureFormat.RGBA32, false);
-        float[] samples = new float[audio.samples];
-        float[] waveform = new float[width];
-        audio.GetData(samples, 0);
-        int packSize = (audio.samples / width) + 1;
-        int s = 0;
-        for (int i = 0; i < audio.samples; i += packSize)
-        {
-            waveform[s] = Mathf.Abs(samples[i]);
-            s++;
-        }
-
-        for (int x = 0; x < width; x++)
-        {
-            for (int y = 0; y < height; y++)
-            {
-                tex.SetPixel(x, y, Color.black);
-            }
-        }
-
-        for (int x = 0; x < waveform.Length; x++)
-        {
-            for (int y = 0; y <= waveform[x] * ((float)height * .75f); y++)
-            {
-                tex.SetPixel(x, (height / 2) + y, col);
-                tex.SetPixel(x, (height / 2) - y, col);
-            }
-        }
-        tex.Apply();
-
-        return tex;
-    }
+    }    
 }
